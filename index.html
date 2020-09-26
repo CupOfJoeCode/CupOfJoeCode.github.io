@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>BrainF***</title>
+        <style>
+            body {
+                font-family:monospace;
+                background-color:#211f1f;
+                color:white;
+            }
+            textarea {
+                font-family:monospace;
+                background-color:#211f1f;
+                color:white;
+            }
+            input {
+                font-family:monospace;
+                background-color:#211f1f;
+                color:white;
+            }
+            button {
+                font-family:monospace;
+                background-color:#211f1f;
+                color:white;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <p>
+            <textarea cols=64 rows=20 style="resize: none" id="txtbx"></textarea>
+            <button onClick="reset();">Run</button>
+            <input id="slide" type="range" min=0 max=1000 value=0>
+            <textarea cols=32 rows=20 id="debug" readonly></textarea>
+        </p>
+        <p>
+            Output <textarea id="outp" cols=32 rows=8 readonly></textarea>
+            Status <input type="text" id="stat" readonly>
+        </p>
+        <p>
+            &gt;++++++++[&lt;+++++++++&gt;-]&lt;.&gt;++++[&lt;+++++++&gt;-]&lt;+.+++++++..+++.&gt;&gt;++++++[&lt;+++++++&gt;-]&lt;++.------------.&gt;++++++[&lt;+++++++++&gt;-]&lt;+.&lt;.+++.------.--------.&gt;&gt;&gt;++++[&lt;++++++++&gt;-]&lt;+.
+        </p>
+        
+
+        <script src="script.js"></script>
+
+
+    </body>
+</html>
