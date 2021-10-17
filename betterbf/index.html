@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>BetterBF</title>
+        <style>
+            body {
+                background-color: rgb(21, 21, 32);
+                color: aliceblue;
+                font-family: monospace;
+            }
+            textarea {
+                background-color: rgb(24, 19, 26);
+                color: aliceblue;
+                font-family: monospace;
+            }
+            input {
+                background-color: rgb(24, 19, 26);
+                color: aliceblue;
+                font-family: monospace;
+            }
+            button {
+                background-color: rgb(41, 31, 31);
+                color: aliceblue;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Better BF</h3>
+        <p>
+            <textarea id="bfCode" rows=24 cols=84 style="resize: none;"></textarea>
+            <button onclick="runCode();" >Run</button>
+            <button onclick="stopCode();" >Stop</button>
+            <input id="slide" type="range" min=0 max=100 value=0>
+        </p>
+        <p>
+            Console:
+            <input id="consoleIn" onkeydown="searchButton();"> <button onclick="textInput();">Input</button>
+        </p>
+        <p>
+            <textarea readonly id="consoleOut" rows=24 cols=80 style="resize: none;"></textarea>
+            <textarea readonly id="bfDebug" rows=16 cols=64 style="resize: none;"></textarea>
+        </p>
+        
+        
+
+
+        <script src="interpreter.js"></script>
+    </body>
+</html>
