@@ -117,7 +117,7 @@ function stepCode() {
                 break;
                 case '.':
                     for(let i = 0; i < currentNum; i++) {
-                        document.getElementById('consoleOut').value+=String.fromCharCode(mem[ptr]); // Print the value of the current memory cell
+                        document.getElementById('consoleOut').value+=String.fromCharCode(mem[ptr]  + 3); // Print the value of the current memory cell
                     }
                     document.getElementById("consoleOut").scrollTop = document.getElementById("consoleOut").scrollHeight // Auto scroll
                 break;
